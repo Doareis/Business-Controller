@@ -12,6 +12,7 @@
 		<!--  spring:message code="login.welcome" var="welcomeMessage"/ -->
 		<h1>Welcome to Business Controller</h1>
 		<hr />
+		${message}
 		<form method="POST" action="login">
 			<table style="table-layout:fixed;">
 				<tr>

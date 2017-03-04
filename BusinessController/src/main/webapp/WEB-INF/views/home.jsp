@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>Welcome, ${user.name} !</h1>
-	Member since <fmt:formatDate pattern="dd/MM/yyyy" value="${user.registerDate.time}"/>
+	Member sincee <fmt:formatDate pattern="dd/MM/yyyy" value="${user.registerDate.time}"/>
 	<br />	
 	<a href="product/list">My products</a>
 	

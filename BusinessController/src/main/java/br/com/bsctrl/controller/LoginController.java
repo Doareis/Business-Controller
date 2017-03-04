@@ -26,9 +26,9 @@ public class LoginController {
 		ModelAndView mav;
 		User user = userDAO.getUserByEmail(email);
 		if(user != null && user.getPassword().equalsIgnoreCase(password)){
-			// TODO colocar usuaria na sessao			
+			// TODO colocar usuario na sessao			
 			mav = new ModelAndView("home");
-			mav.addObject("loggedUser", user.getName());
+			mav.addObject("user", user);
 		}
 		else{
 			mav = new ModelAndView("index");
