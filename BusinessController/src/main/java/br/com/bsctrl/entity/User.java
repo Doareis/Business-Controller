@@ -1,6 +1,7 @@
 package br.com.bsctrl.entity;
 
 import java.io.Serializable;
+import java.util.Calendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -32,11 +33,14 @@ public class User implements Serializable{
 	@Column(name="cpf", nullable=false)
 	private String cpf;
 	
+	@Column(name="register_date")
+	private Calendar registerDate;
+	
 	// getters & setters
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -62,6 +66,12 @@ public class User implements Serializable{
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	public Calendar getRegisterDate() {
+		return registerDate;
+	}
+	public void setRegisterDate(Calendar registerDate) {
+		this.registerDate = registerDate;
 	}
 	
 }

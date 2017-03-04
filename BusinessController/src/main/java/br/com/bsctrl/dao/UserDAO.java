@@ -1,5 +1,6 @@
 package br.com.bsctrl.dao;
 
+import java.util.Calendar;
 import java.util.List;
 
 import org.hibernate.Query;
@@ -14,6 +15,7 @@ import br.com.bsctrl.entity.User;
 public class UserDAO extends BaseDAO{
 	
 	public void save(User user){
+		user.setRegisterDate(Calendar.getInstance());
 		super.save(user);
 	}
 

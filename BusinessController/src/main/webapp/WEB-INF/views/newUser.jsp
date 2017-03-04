@@ -1,17 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1" />
 	<title>Business Controller</title>
 </head>
 <body>
 	<h1>Register on application</h1>
-	<hr />
+	<hr>
 	<form action="addUser">
-		<h:messages />
 		<table>
 			<tr>
 				<td>Name:</td>
@@ -32,6 +27,6 @@
 		</table>
 		<button type="submit">Register</button>
 	</form>
-	<hr/>
+	<hr>
 </body>
 </html>
